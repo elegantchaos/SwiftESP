@@ -5,7 +5,7 @@
 
 import XCTest
 
-@testable import SkyrimFileFormat
+@testable import SwiftESP
 
 
 

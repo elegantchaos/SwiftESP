@@ -6,7 +6,7 @@
 import XCTest
 import XCTestExtensions
 
-@testable import SkyrimFileFormat
+@testable import SwiftESP
 
 final class ESPSavingTests: ProcessorTestCase {
     override class func setUp() {

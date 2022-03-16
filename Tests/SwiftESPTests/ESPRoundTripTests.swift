@@ -6,7 +6,7 @@
 import BinaryCoding
 import XCTest
 import XCTestExtensions
-@testable import SkyrimFileFormat
+@testable import SwiftESP
 
 
 class ESPRoundTripTests: ProcessorTestCase {
@@ -96,7 +96,7 @@ class ESPRoundTripTests: ProcessorTestCase {
             XCTAssertEqual(originalJSON, decodedJSON)
         }
         
-        for child in record._children {
+        for child in record.children {
             try await roundTripRecord(child)
         }
     }

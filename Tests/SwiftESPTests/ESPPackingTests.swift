@@ -6,7 +6,7 @@
 import XCTest
 import XCTestExtensions
 
-@testable import SkyrimFileFormat
+@testable import SwiftESP
 
 final class ESPPackingTests: ProcessorTestCase {
     

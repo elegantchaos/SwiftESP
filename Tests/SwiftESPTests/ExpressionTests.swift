@@ -4,7 +4,7 @@
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 import XCTest
-import SkyrimFileFormat
+import SwiftESP
 
 extension RawExpression {
     static let rawVMQuest = RawExpression(function: 629, value: 0, comparison: .equals, flags: [], parameters: [219994, 2547345624], runOn: .subject)

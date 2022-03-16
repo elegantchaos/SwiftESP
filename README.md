@@ -2,15 +2,15 @@
 
 [![Test results][tests shield]][actions] [![Latest release][release shield]][releases] [![swift 5.5 shield] ![swift dev shield]][swift] ![Platforms: macOS][platforms shield]
 
-[release shield]: https://img.shields.io/github/v/release/elegantchaos/SkyrimFileFormat
+[release shield]: https://img.shields.io/github/v/release/elegantchaos/SwiftESP
 [platforms shield]: https://img.shields.io/badge/platforms-macOS-lightgrey.svg?style=flat "macOS"
-[tests shield]: https://github.com/elegantchaos/SkyrimFileFormat/workflows/Tests/badge.svg
+[tests shield]: https://github.com/elegantchaos/SwiftESP/workflows/Tests/badge.svg
 [swift 5.5 shield]: https://img.shields.io/badge/swift-5.5-F05138.svg "Swift 5.5"
 [swift dev shield]: https://img.shields.io/badge/swift-dev-F05138.svg "Swift dev"
 
 [swift]: https://swift.org
-[releases]: https://github.com/elegantchaos/SkyrimFileFormat/releases
-[actions]: https://github.com/elegantchaos/SkyrimFileFormat/actions
+[releases]: https://github.com/elegantchaos/SwiftESP/releases
+[actions]: https://github.com/elegantchaos/SwiftESP/actions
 
 [comment]: <> (End of ActionStatus Header)
 

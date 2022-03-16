@@ -6,7 +6,7 @@
 import BinaryCoding
 import XCTest
 import XCTestExtensions
-@testable import SkyrimFileFormat
+@testable import SwiftESP
 
 class FieldCodingTests: ProcessorTestCase {
     func testAlternateTexture() throws {

@@ -5,7 +5,7 @@
 
 import Foundation
 import XCTest
-@testable import SkyrimFileFormat
+@testable import SwiftESP
 
 class ProcessorTestCase: XCTestCase {
     let processor = Processor()
