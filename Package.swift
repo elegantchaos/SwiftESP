@@ -8,20 +8,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "SkyrimFileFormat",
+    name: "SwiftESP",
     platforms: [
         .macOS(.v12)
     ],
     products: [
-        .executable(
-            name: "skyc",
-            targets: ["SkyC"]
+        .library(
+            name: "SwiftESP",
+            targets: ["SwiftESP"]
         ),
-        
-            .library(
-                name: "SkyrimFileFormat",
-                targets: ["SkyrimFileFormat"]
-            ),
     ],
     dependencies: [
         .package(url: "https://github.com/elegantchaos/AsyncSequenceReader.git", from: "0.1.0"),
@@ -38,17 +33,8 @@ let package = Package(
     ],
     
     targets: [
-        .executableTarget(
-            name: "SkyC",
-            dependencies: [
-                "Files",
-                "SkyrimFileFormat",
-                .product(name: "ArgumentParser", package: "swift-argument-parser"),
-            ]
-        ),
-        
         .target(
-            name: "SkyrimFileFormat",
+            name: "SwiftESP",
             dependencies: [
                 "AsyncSequenceReader",
                 "BinaryCoding",
@@ -64,8 +50,8 @@ let package = Package(
         ),
     
         .testTarget(
-            name: "SkyrimFileFormatTests",
-            dependencies: ["SkyrimFileFormat", "XCTestExtensions"],
+            name: "SwiftESPTests",
+            dependencies: ["SwiftESP", "XCTestExtensions"],
             resources: [
                 .process("Resources/Examples/"),
                 .copy("Resources/Unpacked"),
