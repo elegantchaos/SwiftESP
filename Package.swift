@@ -28,7 +28,6 @@ let package = Package(
         .package(url: "https://github.com/elegantchaos/Files.git", from: "1.2.2"),
         .package(url: "https://github.com/elegantchaos/Logger.git", from: "1.7.3"),
         .package(url: "https://github.com/tsolomko/SWCompression.git", .upToNextMajor(from: "4.7.0")),
-        .package(url: "https://github.com/apple/swift-argument-parser", branch: "async"),
         .package(url: "https://github.com/elegantchaos/XCTestExtensions.git", from: "1.4.6"),
     ],
     
