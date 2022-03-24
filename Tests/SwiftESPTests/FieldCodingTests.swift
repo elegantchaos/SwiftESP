@@ -87,13 +87,13 @@ class FieldCodingTests: ProcessorTestCase {
     
     func testBOD2Field() throws {
         let data = Data([
-            0x01, 0x40, 0x10, 0x00, // flags 0x00104001 head, addOn3, decapitateHead
+            0x01, 0x40, 0x10, 0x00, // flags 0x00104001 head, mouth, decapitateHead
             0x02, 0x00, 0x00, 0x00, // clothing
         ])
         
         let decoder = DataDecoder(data: data)
         let decoded = try decoder.decode(BOD2Field.self)
-        XCTAssertEqual(decoded.partFlags, [.head, .addOn3, .decapitateHead])
+        XCTAssertEqual(decoded.partFlags, [.head, .mouth, .decapitateHead])
         XCTAssertEqual(decoded.armorType, .clothing)
         
         let encoder = DataEncoder()

@@ -3,17 +3,19 @@
 //  All code (c) 2022 - present day, Elegant Chaos Limited.
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-@testable import SwiftESP
+import SwiftCreationKitCommon
 import XCTest
+
+@testable import SwiftESP
 
 class PartNodeTests: XCTestCase {
     func testRoundtrip() throws {
-        let partNode: PartNodeFlags = [.head, .addOn11, .body]
+        let partNode: PartFlags = [.head, .leg_left, .body]
         let encoder = JSONEncoder()
         let data = try encoder.encode(partNode)
         
         let decoder = JSONDecoder()
-        let decoded = try decoder.decode(PartNodeFlags.self, from: data)
+        let decoded = try decoder.decode(PartFlags.self, from: data)
         XCTAssertEqual(partNode, decoded)
     }
 }

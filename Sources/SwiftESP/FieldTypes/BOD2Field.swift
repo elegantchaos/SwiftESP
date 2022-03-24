@@ -5,9 +5,10 @@
 
 import BinaryCoding
 import Foundation
+import SwiftCreationKitCommon
 
 public struct BOD2Field: BinaryCodable {
-    let partFlags: PartNodeFlags
+    let partFlags: PartFlags
     let armorType: ArmorType
 
     enum ArmorType: String, DecodableFromIntOrString {
