@@ -5,11 +5,11 @@
 
 import BinaryCoding
 
-struct OBNDField: BinaryCodable {
-    let x1: Int16
-    let y1: Int16
-    let z1: Int16
-    let x2: Int16
-    let y2: Int16
-    let z2: Int16
+public struct OBNDField: BinaryCodable {
+  let x1: Int16
+  let y1: Int16
+  let z1: Int16
+  let x2: Int16
+  let y2: Int16
+  let z2: Int16
 }

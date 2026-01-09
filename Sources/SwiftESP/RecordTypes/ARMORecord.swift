@@ -7,76 +7,75 @@ import BinaryCoding
 import Bytes
 import Foundation
 
+public struct ARMORecord: Codable, IdentifiedRecord {
+  public static var tag = Tag("ARMO")
 
-struct ARMORecord: Codable, IdentifiedRecord {
-    static var tag = Tag("ARMO")
-    
-    let _meta: RecordMetadata
+  public let _meta: RecordMetadata
 
-    let editorID: String?
-    let bounds: OBNDField
-    let fullName: String?
-    let enchantment: FormID?
-    let enchantmentAmount: UInt16?
-    let maleArmour: String
-    let maleModelData: MODTField?
-    let maleTextures: AlternateTextureField?
-    let maleInventoryImage: String?
-    let maleMessageImage: String?
-    let femaleArmour: String?
-    let femaleModelData: MODTField?
-    let femaleTextures: AlternateTextureField?
-    let femaleInventoryImage: String?
-    let femaleMessageImage: String?
-    let bodyTemplate: BOD2Field
-    let pickupSound: FormID
-    let dropSound: FormID
-    let equipSlot: FormID?
-    let bashImpactDataSet: FormID?
-    let bashMaterial: FormID?
-    let race: FormID
-    let keywordCount: UInt32
-    let keywords: SingleFieldArray<FormID>
-    let desc: String
-    let armature: [FormID]
-    let data: DATAField
-    let armourRating: UInt32
-    let template: FormID?
+  public let editorID: String?
+  public let bounds: OBNDField
+  public let fullName: String?
+  public let enchantment: FormID?
+  public let enchantmentAmount: UInt16?
+  public let maleArmour: String
+  public let maleModelData: MODTField?
+  public let maleTextures: AlternateTextureField?
+  public let maleInventoryImage: String?
+  public let maleMessageImage: String?
+  public let femaleArmour: String?
+  public let femaleModelData: MODTField?
+  public let femaleTextures: AlternateTextureField?
+  public let femaleInventoryImage: String?
+  public let femaleMessageImage: String?
+  public let bodyTemplate: BOD2Field
+  public let pickupSound: FormID
+  public let dropSound: FormID
+  public let equipSlot: FormID?
+  public let bashImpactDataSet: FormID?
+  public let bashMaterial: FormID?
+  public let race: FormID
+  public let keywordCount: UInt32
+  public let keywords: SingleFieldArray<FormID>
+  public let desc: String
+  public let armature: [FormID]
+  public let data: DATAField
+  public let armourRating: UInt32
+  public let template: FormID?
 
-    static var fieldMap = FieldTypeMap(paths: [
-        (CodingKeys.editorID, \Self.editorID, "EDID"),
-        (.bounds, \.bounds, "OBND"),
-        (.fullName, \.fullName, "FULL"),
-        (.enchantment, \.enchantment, "EITM"),
-        (.enchantmentAmount, \.enchantmentAmount, "EAMT"),
-        (.maleArmour, \.maleArmour, "MOD2"),
-        (.maleModelData, \.maleModelData, "MO2T"),
-        (.maleTextures, \.maleTextures, "MO2S"),
-        (.maleInventoryImage, \.maleInventoryImage, "ICON"),
-        (.maleMessageImage, \.maleMessageImage, "MICO"),
-        (.femaleArmour, \.femaleArmour, "MOD4"),
-        (.femaleModelData, \.femaleModelData, "MO4T"),
-        (.femaleTextures, \.femaleTextures, "MO4S"),
-        (.femaleInventoryImage, \.femaleInventoryImage, "ICO2"),
-        (.femaleMessageImage, \.femaleMessageImage, "MIC2"),
-        (.bodyTemplate, \.bodyTemplate, "BOD2"),
-        (.pickupSound, \.pickupSound, "YNAM"),
-        (.dropSound, \.dropSound, "ZNAM"),
-        (.equipSlot, \.equipSlot, "ETYP"),
-        (.bashImpactDataSet, \.bashImpactDataSet, "BIDS"),
-        (.bashMaterial, \.bashMaterial, "BAMT"),
-        (.race, \.race, "RNAM"),
-        (.keywordCount, \.keywordCount, "KSIZ"),
-        (.keywords, \.keywords, "KWDA"),
-        (.desc, \.desc, "DESC"),
-        (.armature, \.armature, "MODL"),
-        (.data, \.data, "DATA"),
-        (.armourRating, \.armourRating, "DNAM"),
-        (.template, \.template, "TNAM"),
-    ])
-    
-    struct DATAField: BinaryCodable {
-        let base: UInt32
-        let weight: Float
-    }
+  public static var fieldMap = FieldTypeMap(paths: [
+    (CodingKeys.editorID, \Self.editorID, "EDID"),
+    (.bounds, \.bounds, "OBND"),
+    (.fullName, \.fullName, "FULL"),
+    (.enchantment, \.enchantment, "EITM"),
+    (.enchantmentAmount, \.enchantmentAmount, "EAMT"),
+    (.maleArmour, \.maleArmour, "MOD2"),
+    (.maleModelData, \.maleModelData, "MO2T"),
+    (.maleTextures, \.maleTextures, "MO2S"),
+    (.maleInventoryImage, \.maleInventoryImage, "ICON"),
+    (.maleMessageImage, \.maleMessageImage, "MICO"),
+    (.femaleArmour, \.femaleArmour, "MOD4"),
+    (.femaleModelData, \.femaleModelData, "MO4T"),
+    (.femaleTextures, \.femaleTextures, "MO4S"),
+    (.femaleInventoryImage, \.femaleInventoryImage, "ICO2"),
+    (.femaleMessageImage, \.femaleMessageImage, "MIC2"),
+    (.bodyTemplate, \.bodyTemplate, "BOD2"),
+    (.pickupSound, \.pickupSound, "YNAM"),
+    (.dropSound, \.dropSound, "ZNAM"),
+    (.equipSlot, \.equipSlot, "ETYP"),
+    (.bashImpactDataSet, \.bashImpactDataSet, "BIDS"),
+    (.bashMaterial, \.bashMaterial, "BAMT"),
+    (.race, \.race, "RNAM"),
+    (.keywordCount, \.keywordCount, "KSIZ"),
+    (.keywords, \.keywords, "KWDA"),
+    (.desc, \.desc, "DESC"),
+    (.armature, \.armature, "MODL"),
+    (.data, \.data, "DATA"),
+    (.armourRating, \.armourRating, "DNAM"),
+    (.template, \.template, "TNAM"),
+  ])
+
+  public struct DATAField: BinaryCodable {
+    let base: UInt32
+    let weight: Float
+  }
 }
