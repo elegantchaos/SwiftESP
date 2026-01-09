@@ -3,10 +3,10 @@
     {
       "identity" : "asyncsequencereader",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/elegantchaos/AsyncSequenceReader.git",
+      "location" : "https://github.com/mochidev/AsyncSequenceReader.git",
       "state" : {
-        "revision" : "ad2aadf9790a6598c67b11a4a0e007087ac6aeb5",
-        "version" : "0.1.0"
+        "revision" : "542db2cabb0b34f3c8035d58b06510968bca4cf9",
+        "version" : "0.3.1"
       }
     },
     {
@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/elegantchaos/BinaryCoding.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "f9225a21effe8aaf32b402fd41def38819393f8c"
+        "revision" : "6a7190d1aea1c94f2b15163801f9309b4d6f0c56",
+        "version" : "1.0.5"
       }
     },
     {
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/tsolomko/BitByteData",
       "state" : {
-        "revision" : "c119e12decae8f56066df3345a4ac1a05b2f06d5",
-        "version" : "2.0.1"
+        "revision" : "cdcdc5177ad536cfb11b95c620f926a81014b7fe",
+        "version" : "2.0.4"
       }
     },
     {
@@ -32,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/elegantchaos/Bytes.git",
       "state" : {
-        "branch" : "float-support",
-        "revision" : "dfd75eda165e698ec971dafc7a1bf469ca361ac6"
+        "revision" : "545ee631d20b34cd9599f65c979c26e3384d5bf7",
+        "version" : "0.3.3"
       }
     },
     {
@@ -64,15 +64,6 @@
       }
     },
     {
-      "identity" : "files",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/elegantchaos/Files.git",
-      "state" : {
-        "revision" : "ccb417b5b4f2d473964594a7c906a50a62c8530c",
-        "version" : "1.2.2"
-      }
-    },
-    {
       "identity" : "logger",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/elegantchaos/Logger.git",
@@ -100,12 +91,12 @@
       }
     },
     {
-      "identity" : "swift-argument-parser",
+      "identity" : "swiftcreationenginecommon",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-argument-parser",
+      "location" : "https://github.com/elegantchaos/SwiftCreationEngineCommon.git",
       "state" : {
-        "branch" : "async",
-        "revision" : "3cad8ef903440142ba35f51db53b3df591156a00"
+        "revision" : "8dc1d28d7994aef635a8c40bd38da25f3ba3ccef",
+        "version" : "1.0.2"
       }
     },
     {
