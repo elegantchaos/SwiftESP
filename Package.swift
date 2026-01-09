@@ -1,4 +1,4 @@
-// swift-tools-version:5.6
+// swift-tools-version:5.11
 
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 //  Created by Sam Deane on 31/01/2022.

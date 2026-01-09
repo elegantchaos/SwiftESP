@@ -10,7 +10,7 @@ import Foundation
 extension AsyncBufferedIterator where Element == Byte {
     @inlinable
     public mutating func next<T: BinaryFloatingPoint>(littleEndian type: T.Type) async throws -> T {
-        let bytes = try await next(bytes: Bytes.self, count: MemoryLayout<T>.size)
+        let bytes = try await next(Bytes.self, count: MemoryLayout<T>.size)
         switch MemoryLayout<T>.size {
             case 1: return unsafeBitCast(try UInt8(littleEndianBytes: bytes), to: T.self)
             case 2: return unsafeBitCast(try UInt16(littleEndianBytes: bytes), to: T.self)
